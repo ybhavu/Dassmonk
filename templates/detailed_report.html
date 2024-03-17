@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detailed Report</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 20px;
+        }
+
+        h1 {
+            color: #007BFF;
+        }
+
+        .recommendations {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        strong {
+            color: #007BFF;
+        }
+    </style>
+</head>
+<body>
+    <h1>Detailed Report</h1>
+
+    <!-- Your existing HTML content -->
+
+    <div class="recommendations">
+        <h2>Recommendations:</h2>
+        
+        <h3>Music:</h3>
+        <ul>
+            {% for recommendation in recommendations.music %}
+                <li>{{ recommendation }}</li>
+            {% endfor %}
+        </ul>
+    
+    
+        <h3>Quotes:</h3>
+        <ul>
+            {% for recommendation in recommendations.quotes %}
+                <li>{{ recommendation }}</li>
+            {% endfor %}
+        </ul>
+    </div>
+    
+    
+
+    <!-- Your existing HTML content -->
+
+</body>
+</html>
